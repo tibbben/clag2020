@@ -1,0 +1,391 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="common/css/reveal.css">
+        <link rel="stylesheet" href="common/css/black.css">
+        <link rel="stylesheet" href="common/css/overrides.css">
+        <link rel="stylesheet" href="common/css/child.css">
+	    <script src="common/java/print.js"></script>
+        <title>Maps of the Vernacular: PPGIS and Participatory Data Collection in Las Flores of Barranquilla, Colombia</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+				
+				<!-- **************************************************************************** 
+				                                    Slides Begin Here                               
+				     ****************************************************************************  -->
+            
+				<section data-transition="slide none" data-background-image="assets/images/street.jpg">
+					<div style="width: 1366px; height: 768px; position: absolute; top: 0px; left: 0px; ">
+						<div style="position: absolute; left: 350px; top: 75px; font-size: 110%; line-height: 100%; text-shadow: 2px 2px 4px #555;"><strong>Maps of the Vernacular:</strong></div>
+						<div style="position: absolute; left: 335px; top: 120px; font-size: 80%; text-shadow: 2px 2px 4px #555; color: rgb(243,295,48);">PPGIS and Participatory Data Collection in Las Flores of Barranquilla, Colombia.</div>
+						<div style="position: absolute; left: 230px; top: 260px; font-size: 50%; text-align: left" class="text-white">Timothy Norris - University of Miami - Library - Center for Computational Science - <a href="mailto:tnorris@miami.edu" style="color: #222 !important; text-decoration: underline;">tnorris@miami.edu</a></div>
+						<div style="position: absolute; left: 230px; top: 288px; font-size: 50%; text-align: left" class="text-white">Christopher Mader - University of Miami - Center for Computational Science - <a href="mailto:cmader@med.miami.edu" style="color: #222 !important; text-decoration: underline;">cmader@med.miami.edu</a></div>
+						<div style="position: absolute; left:320px; top: 420px; font-size: 50%; text-align: left" class="text-white">CLAG - Methods: Dillemmas and Discussions<br>
+						Antigua, Guatemala, January 3 2020</div>
+					</div>
+        </section>
+        
+				<section data-transition="slide none" data-background-image="assets/images/DSC_0017.JPG">
+					<!-- <div class="fragment fade-in"><h5 style="color: white; text-shadow: 2px 2px 4px #555; margin-top: -300px;">unplanned urban development is a challenge to sustainability</h5></div> -->
+        </section>
+        
+				<section data-transition="slide none" data-background-color="#FFF">
+					<div style="width: 1200px; height: 700px; margin-left: auto; margin-right: auto;">
+            <canvas data-chart="line">				
+						<!--
+						 {
+						 "data": {
+						  "labels": ["1950","1955","1960","1965","1970","1975","1980","1985","1990","1995","2000","2005","2010","2015","2020","2025","2030","2035","2040","2045","2050"],
+						  "datasets": [
+						   {
+							"data": [0.7465,0.8721,1.0195,1.1839,1.3503,1.5347,1.7495,2.0031,2.2850,2.5681,2.8561,3.1990,3.5713,3.9573,4.3380,4.7058,5.0582,5.3942,5.7154,6.0309,6.3386],
+							"label": "urban",
+							"borderColor": "#c07727",
+							"backgroundColor":"rgba(190,142,39,0.3)"
+						   },{
+							"data": [1.7793,1.8895,2.0065,2.1452,2.3409,2.5363,2.6995,2.8606,3.0358,3.1738,3.2716,3.3151,3.3449,3.3675,3.3787,3.3776,3.3668,3.3492,3.3233,3.2775,3.2123],
+							"label": "rural",
+							"borderColor": "#cfc813",
+							"backgroundColor":"rgba(207,200,19,0.3)"
+						   }
+						  ]
+						 },
+						 "options": { 
+						  "responsive": "true", 
+						  "title": { 
+						   "display": "true",
+						   "fontSize": 32,
+						   "fontColor": "#555",
+						   "text": "Predicted World Population Trends: Rural vs Urban", 
+						   "padding": 40
+						  }, 
+						  "legend": { 
+						   "position": "bottom", 
+						   "labels": { 
+							"boxWidth": 13,
+						    "fontSize": 18
+						   }
+						  },
+						  "tooltips": {
+						   "labels": { "fontColor": "#555" }
+						  },
+                          "scales": {
+						   "yAxes": [{
+							"id": "y-axis-1",
+							"display": "true",
+							"position": "left",
+							"gridLines": {
+							 "color": "#fff",
+							 "zeroLineColor": "#444"
+							},
+							"ticks": {
+							 "fontSize": 18
+							},
+							"scaleLabel": {
+							 "display": "true",
+							 "labelString": "population (billions)",
+							 "fontColor": "#444",
+							 "fontSize": 24
+							}
+						   }],
+						   "xAxes": [{
+							"id": "x-axis-1",
+							"display": "true",
+							"gridLines": {
+							 "color": "#fff",
+							 "zeroLineColor": "#444"
+							},
+							"ticks": {
+							 "fontSize": 16
+							}
+						   }]
+						  } 
+						 }
+						}
+						-->
+						</canvas>
+						<p class="reference">
+							United Nations, Department of Economic and Social Affairs, Population Division (2014). World Urbanization Prospects: The 2014 Revision.
+						</p>
+					</div>
+				</section>
+        
+				<!-- **************************************************************************** 
+				                                    outline                               
+				     ****************************************************************************  -->
+        
+				<section data-transition="slide none">
+					<p class="fragment highlight-text center" style="width: 65%;">Literature Review</p>
+          <p class="fragment highlight-text center" style="width: 65%;">Fieldwork</p>
+          <p class="fragment highlight-text center" style="width: 65%;">Framework for Mapping the Vernacular</p>
+				</section>
+        
+				<!-- **************************************************************************** 
+				                                    Literature review                               
+				     ****************************************************************************  -->
+        
+        <section data-transition="slide none">
+          <h4>Interdisciplinary solutions to wicked problems</h4>
+           <ul style="margin-left: 30px; font-size: 80%; line-height: 150%;">
+            <li>Geography and participatory mapping</li>
+            <li>Architecture and Vernacular Architecture</li>
+            <li>Library and Information Science and Indigenous Data Governance</li>
+          </ul>
+        </section>
+
+				<section data-transition="slide none" data-background-image="assets/images/P1040222.JPG">
+					<p style="width: 80%; position: relative; z-index: 100; margin-bottom: 600px;" class="center highlight-text">Participatory Mapping</p>
+				</section>
+
+        <section data-transition="slide none" data-background-image="assets/images/students.jpg">
+					<p style="width: 80%;" class="highlight-text center">"It is an odd concept to attribute to a piece of software the potential to enhance or limit public participation in policymaking, empower or marginalize community members to improve their lives, counter or enable agendas of the powerful, and advance or diminish democratic principles. However, that is exactly what has happened with geographic information systems (GIS) ..." (Sieber 2006: 491)</p>
+					<p class="reference-black highlight-text">
+						Sieber, R. (2006). Public Participation Geographic Information Systems: A Literature Review and Framework. <i>Annals of the Association of American Geographers</i>, 96(3), 491-507. doi:10.1111/j.1467-8306.2006.00702.x
+					</p>
+				</section>
+        
+				<section data-transition="slide none" data-background-image="assets/images/P1040278.jpg">
+					<p style="width: 80%; position: relative; z-index: 100; margin-bottom: 600px;" class="center highlight-text">Vernacular Architecture</p>
+					<aside class="notes">The informal city can seem incomprehensible as it is largely a city perceived in motion- a three dimensional construct of incremental development.</aside>
+				</section>
+
+				<section data-background-image="assets/images/Las-Flores-aerial-view-neighborhoods.jpg" data-transition="slide none">
+          <aside class="notes">They are compact with clearly delineated boundaries (either natural or manmade) and with very few points of entry.</aside>
+				</section>
+
+				<section data-background-image="assets/images/LasFlores_final_300.jpg" data-transition="slide none">
+					<aside class="notes">The physical patterns are organic and irregular, adapting and developing over time as the needs and circumstances of the community change ...</aside>
+				</section>
+
+				<section data-background-image="assets/images/DSC_0019.jpg" data-transition="slide none">
+					<aside class="notes">Furthermore, while methods of construction are continuously evolving from less permanent materials ...</aside>
+				</section>
+
+				<section data-background-image="assets/images/P1040281.jpg" data-transition="slide none">
+					<aside class="notes">... to more permanent materials, the urban pattern and the subdivision of land is remarkably resilient.</aside>
+				</section>
+        
+				<section data-transition="slide none">
+					<p class="center highlight-text" style="width: 80%;">Indigenous Data Governance</p>
+          <p style="width: 80%; font-size: 0.8em;" class="center">We are currently, as a globalizing presence, seeking to preserve many kinds of diversity—linguistic, cultural, ethnic, and genetic, to name but a few. And yet that preservation has its price; ethnic and linguistic diversity can best be maintained by sequestration, which is good for the connoisseur of the diverse but not necessarily for the diverse themselves. Databases are often seen as a good site for preservation without politics: from the Mayan cultural atlas (Toledo Maya Cultural Council, 1997) through the efflorescence of museums of indigenous knowledge. Really listening to other ways of knowing entails more than just databasing. After all, indigenous knowledge tends to end up in text fields in scientific databases: collocated with the real data but unmanipulable and hence unusable. How should we record and remember other ways of knowing?” (pp. 218-219)</p>
+          <p class="reference-black">
+            Bowker, Geoffrey C. (2005). Memory Practices in the Sciences. Cambridge, Massachusetts: The MIT Press. pp 218-219.
+          </p>
+        </section>
+        
+				<!-- **************************************************************************** 
+				                                    Fieldwork                               
+				     ****************************************************************************  -->
+        
+        <section data-transition="slide none">
+          <h4>Fieldwork and Method</h4>
+           <ul style="margin-left: 30px; font-size: 80%; line-height: 150%;">
+            <li>Computer Science and Drone Surveys</li>
+            <li>Geography and participatory mapping</li>
+            <li>Architecture and Vernacular Architecture</li>
+          </ul>
+        </section>        
+        
+        <section data-transition="slide none" data-background-image="assets/images/drone.png">
+					<h4 style="width: 70%; position: relative; top: -200px; margin-left: opx;">AERIAL SURVEY</h4>
+					<aside class="notes">
+						We use an inexpensive quad-copter drone equipped with a modified gopro camera to conduct an aerial survey.
+					</aside>
+				</section>
+
+				<section data-transition="slide none" data-background-video="assets/videos/lasflores-flyover-2017-1080p.mp4" data-background-video-loop data-background-video-muted>
+					<h4>3D MODEL</h4>
+					<aside class="notes">
+						3D models are built using computer vision technology to combine hundreds of images from the drone survey into a point cloud.
+					</aside>
+				</section>
+
+				<section data-transition="slide none" data-background-image="assets/images/ortho-lasflores.png" data-background-size="120%">
+					<h4 style="width: 70%;" class="center">ORTHOPHOTO</h4>
+					<aside class="notes">
+						A composite image with perspective removed, called an orthophoto, is created from the model.
+					</aside>
+				</section>
+        
+				<section data-background-image="assets/images/P1040192.JPG" data-transition="slide none">
+					<div class="fragment fade-out" data-fragment-index="0">
+						<h3  style="width: 70%; margin-bottom: 600px;" class="highlight-text center">Social Cartography?</h3>
+						<aside class="notes">Perhaps equally important is the possibility to combine the aerial photos that show physical "data" with "human" data, data about people.</aside>
+					</div>
+				</section>
+
+				<section data-background-image="assets/images/P1040218.JPG" data-transition="slide none">
+					<aside class="notes">
+						These location based themes can include perceived personal saftey, existing infrastrucure such as transportation hubs and public spaces,
+            missing infrastructure such as street lighting or running water, noise poullution, garbage problems, and so on
+					</aside>
+				</section>
+
+				<section data-background-image="assets/images/P1040215.JPG" data-transition="slide none"></section>
+
+				<section data-background-image="assets/images/lasFloresWaypointsLetter.jpg" data-transition="slide none"></section>
+
+        <section data-transition="slide none" data-background-image="assets/images/students.jpg">
+					<p style="width: 80%; margin-bottom: 600px;" class="highlight-text center">Student work informed by local experience</p>
+				</section>      
+
+        <section data-background-image="assets/images/DSC_0337.jpg" data-transition="slide none">
+        	<div style="width: 1366px; height: 768px; position: absolute; top: 0px; left: 0px; ">
+            <div style="position: absolute; top: 180px; left: 50px; background-color: #fff; shadow: 8px 8px 8px #000;">
+              <img src="assets/images/DSC_0164.jpg" style="max-width: 550px; margin: 13px">
+            </div>
+          </div>
+        </section>
+
+				<section data-background-image="assets/images/studentmaps1.jpg" data-transition="slide none"></section>
+
+				<section data-background-image="assets/images/studentmaps2.jpg" data-transition="slide none"></section>
+
+				<section data-background-image="assets/images/street.jpg" data-transition="slide none">
+          <aside class="notes"> - sustainable development based on local experience</aside>
+				</section>
+
+				<section data-background-image="assets/images/FishMarket.jpg" data-transition="slide none">
+          <aside class="notes">This student project informed by community input proposes a large communal hall as a shared space for a fish market, community meetings, and school gatherings.</aside>
+				</section>		
+
+				<section data-background-image="assets/images/washing.jpg" data-transition="slide none">
+					<aside class="notes">Another student project proposes a public laundry space meant to serve community members with no running water.</aside>
+				</section>
+
+				<section data-background-image="assets/images/Fishery.jpg" data-transition="slide none">
+						<aside class="notes">This project plans for a communal fishery  ...
+						... that addresses environmental concerns such as overfishing and water quality ...
+						... as well as providing opportunities for micro business.
+            </aside>
+				</section>
+        
+				<!-- **************************************************************************** 
+				                                    Conclusion                               
+				     ****************************************************************************  -->
+             
+        <section data-transition="slide none" data-background-image="assets/images/frame.jpg">
+        </section>
+        
+        <section data-transition="slide none">
+					<p class="fragment highlight-text center" style="width: 85%;">Interdisciplinary Crossover</p>
+          <p class="fragment highlight-text center" style="width: 85%;">After rights, then what?</p>
+        </section>
+        
+				<section data-background-image="assets/images/blur.jpg" data-transition="slide none">
+          <div style="font-size: 0.75em; text-shadow: 2px 2px 4px #555;">
+            <h4>Acknowledgements:</h4>
+            <p>We are grateful to the people of Las Flores Colombia, Santa Cruz de Islote Colombia, Santo Domingo (Dominican Republic), and Harbor Island (Bahamas) for letting us into their lives and collaborating with the work under way. Without the generous support from the University of Miami School of Architecture, the University of Miami Center for Computational Science, the University of Miami Libraries, and la Fundacion Tecnoglass none of this work would be possible.</p>
+            <h4>Collaborators:</h4>
+            <p>Carrie Penabad, Adib Cure, Chris Mader, Timothy Norris, Amin Sarafraz, Bernardo Rieveling, Qiazi Chen, Marissa Gudiel, Cristina Posada, Maria Esther Correa Vasquez, Edinson Borja, Nicanor Florez, Dimas Caraballo, Edilsa Ebrat</p>
+            <p style="margin-left: 120px; margin-top: 70px; text-align: left;">Thanks<br>
+            Tim Norris - <a href="mailto:tnorris@miami.edu" style="text-decoration: underline; color: white;">tnorris@miami.edu</a><br>
+            Chris Mader - <a href="mailto:cmader@med.miami.edu" style="text-decoration: underline; color: white">cmader@med.miami.edu</a></p>
+          </div>
+        </section>
+
+				<section data-background-image="assets/images/P1040284.jpg" data-autoslide="10000"></section>        
+        
+        </div>
+        </div>
+        <script src="common/java/reveal.js"></script>
+	    <script src="common/java/notes.js"></script>
+	    <script src="common/java/head.min.js"></script>
+        <script>
+            Reveal.initialize({
+                width: 1366, height: 768, margin: 0.0,
+                controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				mouseWheel: true,
+				chart: {
+					defaults: { 
+						global: { 
+							defaultFontSize: 20,
+							title: { fontColor: "#333" }, 
+							legend: {
+								position: "top",
+								labels: { fontColor: "#333" },
+							},
+							tooltips: {
+								labels: { fontColor: "#333" },
+							},
+						}, 
+						scale: { 
+							scaleLabel: { fontColor: "#333" }, 
+							gridLines: { color: "#333", zeroLineColor: "#333" }, 
+							ticks: { fontColor: "#333" }, 
+						} 
+					},
+				},
+                dependencies: [
+                    { src: 'common/java/Chart.min.js' },
+                    { src: 'common/java/csv2chart.js' }
+                ] 
+            });
+            /* moveToElements() 
+			/* calculates a center of an SVG group and then moves the positon of the
+			/* SVG to center on that point (specific to the timeline SVG)     */
+			function moveToElements(groupElements) {
+				var bounds=new Array(1300, 0, 768, 0); // (minx, maxx, miny, maxy)
+				bounds = extractBounds(groupElements, bounds);
+				var theSVG = document.getElementById('timelineSVG');
+				theSVG.style.width = '3600px'; 
+				theSVG.style.height = '1508px';
+				var startLeft = parseFloat(theSVG.style.left,10),
+					  startTop = parseFloat(theSVG.style.top,10),
+					  endLeft =  -2.25*((bounds[0]+bounds[1])/2)+800,
+					  endTop = -2.25*((bounds[2]+bounds[3])/2)+335;
+				if (endTop > 15 ) { endTop = 15; }
+				if (endTop < -600 ) { endTop = -600; }
+				var dx = endLeft-startLeft,
+					dy = endTop-startTop;
+				for (var i = 0; i < 200; i++) {
+					theSVG.style.left = (startLeft+i*dx/200)+'px';
+					theSVG.style.top = (startTop+i*dy/200)+'px';	
+				}
+			}
+            /* extractBounds() 
+			/* retrieved the bounds of the text and line elements in a SVG group     */
+			function extractBounds(elements, bounds) {
+				for (var i = 0; i < elements.length; i++ ) {
+					if (elements[i].id != 'ignore') {
+						switch (elements[i].tagName) {
+							case 'line': 
+								if (elements[i].x1.baseVal.value < bounds[0] ) { bounds[0] = elements[i].x1.baseVal.value; } 
+								if (elements[i].x2.baseVal.value > bounds[1] ) { bounds[1] = elements[i].x2.baseVal.value; } 
+								if (elements[i].y1.baseVal.value < bounds[2] ) { bounds[2] = elements[i].y1.baseVal.value; } 
+								if (elements[i].y2.baseVal.value > bounds[3] ) { bounds[3] = elements[i].y2.baseVal.value; } 
+								break;
+							case 'text': 
+								if (elements[i].transform.baseVal.getItem(0).matrix.f < bounds[2]){ bounds[2] = elements[i].transform.baseVal.getItem(0).matrix.f; }
+								if (elements[i].transform.baseVal.getItem(0).matrix.f > bounds[3]){ bounds[3] = elements[i].transform.baseVal.getItem(0).matrix.f; }
+								break;
+							case 'g':
+								bounds = extractBounds(elements[i].children, bounds);
+						}
+						if (bounds[3]-bounds[2] > 200 && bounds[2] < 100) { bounds[3] = 250; }
+					}
+				}
+				return bounds;
+			}
+            /* add event listeners to animate the SVG     */
+			Reveal.addEventListener( 'fragmentshown', function( event ) {
+				groupElements = ( event.fragment.children ? event.fragment.children : event.fragment.childNodes );
+				if (event.fragment.tagName == 'g') {
+					moveToElements(groupElements);
+				}
+			});
+			Reveal.addEventListener( 'fragmenthidden', function( event ) {
+				groupElements = ( event.fragment.children ? event.fragment.children : event.fragment.childNodes );
+				if (event.fragment.tagName == 'g') {
+					moveToElements(groupElements);
+				}
+			});
+        </script>
+    </body>
+</html>
