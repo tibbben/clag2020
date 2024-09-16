@@ -1,0 +1,574 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="common/css/reveal.css">
+        <link rel="stylesheet" href="common/css/black.css">
+        <link rel="stylesheet" href="common/css/overrides.css">
+        <link rel="stylesheet" href="common/css/child.css">
+	    <script src="common/java/print.js"></script>
+        <title>Maps of the Vernacular: PPGIS and Participatory Data Collection in Las Flores of Barranquilla, Colombia</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+				
+				<!-- **************************************************************************** 
+				                                    Slides Begin Here                               
+				     ****************************************************************************  -->
+            
+				<section data-transition="slide none" data-background-image="assets/images/street.jpg">
+					<div style="width: 1366px; height: 768px; position: absolute; top: 0px; left: 0px; ">
+						<div style="position: absolute; left: 330px; top: 140px; font-size: 110%; line-height: 100%; text-shadow: 2px 2px 4px #555;"><strong>Maps of the Vernacular:</strong></div>
+						<div style="position: absolute; left: 170px; top: 190px; font-size: 80%; text-shadow: 2px 2px 4px #555; color: rgb(243,295,48);">P/PGIS and Participatory Data Collection in Las Flores of Barranquilla, Colombia.</div>
+						<div style="position: absolute; left: 200px; top: 302px; font-size: 60%; text-align: left" class="text-white">Timothy Norris - <span style="font-size: 85% !important; color:#66a">University of Miami - Library - Center for Computational Science - <a href="mailto:tnorris@miami.edu" style="color: #66a !important; text-decoration: underline;">tnorris@miami.edu</a></span></div>
+						<div style="position: absolute; left: 200px; top: 330px; font-size: 60%; text-align: left" class="text-white">Christopher Mader - <span style="font-size: 85% !important; color:#66a">University of Miami - Center for Computational Science - <a href="mailto:cmader@med.miami.edu" style="color: #66a !important; text-decoration: underline;">cmader@med.miami.edu</a></span></div>
+            <div style="position: absolute; left: 200px; top: 358px; font-size: 60%; text-align: left" class="text-white">Amin Sarafraz - <span style="font-size: 85% !important; color:#66a">University of Miami - Center for Computational Science - <a href="mailto:a.sarafraz@umiami.edu" style="color: #66a !important; text-decoration: underline;">a.sarafraz@umiami.edu</a></span></div>
+						<div style="position: absolute; left:280px; top: 420px; font-size: 55%; text-align: left; color:#a55 !important;" class="text-white">CLAG - Methods: Dillemmas and Discussions<br>
+						Antigua, Guatemala, January 3 2020</div>
+					</div>
+        </section>
+        
+				<section data-transition="slide none" data-background-image="assets/images/DSC_0017.JPG">
+				  <div class="fragment fade-in" data-fragment-index="0"><h5 class="shadow-title" style="margin-bottom: 520px;">Where are the Cities?</h5></div>
+          <p class="reference fragment fade-in highlight-text" data-fragment-index="0" style="color: #bbb !important">
+            Alvarado, Nikolai A. (2020). Where Are the Cities? On Not Excluding (Much More Than) Half of the Latin Americans in Latin Americanist Geography. <i>Journal of Latin American Geography</i> 19(1). pp 193-203.
+          </p>
+        </section>
+        
+				<section data-transition="slide none" data-background-color="#FFF">
+					<div style="width: 1200px; height: 700px; margin-left: auto; margin-right: auto;">
+            <canvas data-chart="line">				
+						<!--
+						 {
+						 "data": {
+						  "labels": ["1950","1955","1960","1965","1970","1975","1980","1985","1990","1995","2000","2005","2010","2015","2020","2025","2030","2035","2040","2045","2050"],
+						  "datasets": [
+						   {
+							"data": [0.7465,0.8721,1.0195,1.1839,1.3503,1.5347,1.7495,2.0031,2.2850,2.5681,2.8561,3.1990,3.5713,3.9573,4.3380,4.7058,5.0582,5.3942,5.7154,6.0309,6.3386],
+							"label": "urban",
+							"borderColor": "#c07727",
+							"backgroundColor":"rgba(190,142,39,0.3)"
+						   },{
+							"data": [1.7793,1.8895,2.0065,2.1452,2.3409,2.5363,2.6995,2.8606,3.0358,3.1738,3.2716,3.3151,3.3449,3.3675,3.3787,3.3776,3.3668,3.3492,3.3233,3.2775,3.2123],
+							"label": "rural",
+							"borderColor": "#cfc813",
+							"backgroundColor":"rgba(207,200,19,0.3)"
+						   }
+						  ]
+						 },
+						 "options": { 
+						  "responsive": "true", 
+						  "title": { 
+						   "display": "true",
+						   "fontSize": 32,
+						   "fontColor": "#555",
+						   "text": "Predicted World Population Trends: Rural vs Urban", 
+						   "padding": 40
+						  }, 
+						  "legend": { 
+						   "position": "bottom", 
+						   "labels": { 
+							"boxWidth": 13,
+						    "fontSize": 18
+						   }
+						  },
+						  "tooltips": {
+						   "labels": { "fontColor": "#555" }
+						  },
+                          "scales": {
+						   "yAxes": [{
+							"id": "y-axis-1",
+							"display": "true",
+							"position": "left",
+							"gridLines": {
+							 "color": "#fff",
+							 "zeroLineColor": "#444"
+							},
+							"ticks": {
+							 "fontSize": 18
+							},
+							"scaleLabel": {
+							 "display": "true",
+							 "labelString": "population (billions)",
+							 "fontColor": "#444",
+							 "fontSize": 24
+							}
+						   }],
+						   "xAxes": [{
+							"id": "x-axis-1",
+							"display": "true",
+							"gridLines": {
+							 "color": "#fff",
+							 "zeroLineColor": "#444"
+							},
+							"ticks": {
+							 "fontSize": 16
+							}
+						   }]
+						  } 
+						 }
+						}
+						-->
+						</canvas>
+						<p class="reference">
+							United Nations, Department of Economic and Social Affairs, Population Division (2014). World Urbanization Prospects: The 2014 Revision.
+						</p>
+					</div>
+				</section>
+        
+				<!-- **************************************************************************** 
+				                                    outline                               
+				     ****************************************************************************  -->
+        
+				<section data-transition="slide none" data-background-image="assets/images/vernacular.jpg">
+					<p class="fragment highlight-text center" style="width: 60%;">Framework for Mapping the Vernacular</p>
+          <p class="fragment highlight-text center" style="width: 60%;">Field Experience</p>
+          <p class="fragment highlight-text center" style="width: 60%;">Reflection on the Future</p>
+				</section>
+        
+				<!-- **************************************************************************** 
+				                                    Literature review                               
+				     ****************************************************************************  -->
+        
+        <section>  
+
+          <section data-transition="slide none" data-background-image="assets/images/P1040284.jpg">
+            <p class="shadow-title highlight-text center fragment" style="width: 85%; margin-bottom: 400px">Interdisciplinary solutions to wicked problems</p>
+            <p class="highlight-text center fragment" style="width: 65%; font-size: 70%; margin-top: 0 !important; margin-bottom: 0 !important; ">Remote Sensing and Photogrammetry</p>
+            <p class="highlight-text center fragment" style="width: 65%; margin-top: 0 !important; margin-bottom: 0 !important; font-size: 70%;">"Participatory" Mapping, Social Cartography, and P/PGIS</p>
+            <p class="highlight-text center fragment" style="width: 65%; font-size: 70%; margin-top: 0 !important; margin-bottom: 0 !important;">Architecture and the Vernacular</p>
+            <p class="highlight-text center fragment" style="width: 65%; font-size: 70%; margin-top: 0 !important; margin-bottom: 0 !important;">Library and Information Science and Indigenous Data Governance</p>
+          </section>
+
+          <section data-transition="fade" data-background-size="contain" data-background-image="assets/images/Cempoalamap.jpg" data-background-color="#000">
+            <div class="template-container">
+              <div class="template-header"></div>
+              <div class="template-content-containter">
+
+                <div div class="template-content-containter">
+                  <div class="template-title fragment fade-out" data-fragment-index="0" style="padding: 13px; background-color: rgba(0,0,0,0.43); color: #ddd; border-radius: 13px; max-width: 700px; margin: 0px auto 0px auto;">The Cempoala [Zempoala, Mexico] Map</div>
+                </div>
+
+              </div>
+
+              <div class="template-citation fragment fade-out"  data-fragment-index="0" style="padding: 13px; background-color: rgba(0,0,0,0.43); color: #ddd; border-radius: 13px; margin-top: -130px !important;">
+                (Nahuatl artists 1580). <i>The Cempoala [Zempoala, Mexico]</i>. Held in the Benson Latin American Collection ‐ University of Texas at Austin.
+              </div>
+              
+              <div class="template-footer"></div>
+           </div>
+          </section> 
+
+          <section data-transition="fade" data-background-size="contain" data-background-image="assets/images/NahuatlMap_Kislak.jpg" data-background-color="#fff">
+            <div class="template-container">
+              <div class="template-header"></div>
+              <div class="template-content-containter">
+
+                <div div class="template-content-containter">
+                  <div class="template-title fragment fade-out" data-fragment-index="0" style="padding: 13px; background-color: rgba(0,0,0,0.43); color: #ddd; border-radius: 13px; max-width: 700px; margin: 0px auto 0px auto;">Mapa de San Juan Tolcayuca</div>
+                </div>
+
+              </div>
+
+              <div class="template-citation fragment fade-out"  data-fragment-index="0" style="padding: 13px; background-color: rgba(0,0,0,0.43); color: #ddd; border-radius: 13px; margin-top: -130px !important;">
+                Nahuatl Artists (Late 17th C). <i>Mapa de San Juan Tolcayuca (Mexico)</i>. Held in the University of Miami Special Collections, on display currently in the Kislak Center.
+              </div>
+              
+              <div class="template-footer"></div>
+           </div>
+          </section>
+
+          <section>
+            <div style="max-width: 80%;" class="center">In a certain sense they celebrate the inevitable assimilation of non-capitalistic societies into a mode of social organization based on institutional creation and protection of private property.</div>
+          </section>
+
+        </section>
+
+        <!-- <section data-transition="slide none" data-background-color="#fff">
+          <h4 style="margin-bottom: 42px;">Method</h4>
+          <img src="assets/images/method.png" class="center" style="max-width: 850px;">
+        </section> -->
+        
+				<!-- **************************************************************************** 
+				                                    Fieldwork                               
+				     ****************************************************************************  -->
+        
+        <section data-transition="slide none">
+          <h4>Fieldwork and Method</h4>
+           <ul style="margin-left: 30px; font-size: 80%; line-height: 150%;">
+            <li>Drone Surveys</li>
+            <li>Social Cartography</li>
+            <li>Participatory Data Collection</li>
+            <li>Data Governance</li>
+            <li>P/PGIS</li>
+          </ul>
+        </section>        
+        
+        <!-- Drone survey -->
+        <section data-transition="slide none" data-background-image="assets/images/photo-9579.jpg">
+					<h4 class="shadow-title" style="width: 70%; position: relative; top: 300px; margin-left: 500px;">AERIAL SURVEY</h4>
+					<aside class="notes">
+						We use an inexpensive quad-copter drone equipped with a modified gopro camera to conduct an aerial survey.
+					</aside>
+				</section>
+
+        <section data-transition="slide none" data-background-image="assets/images/DSC_0096.JPG">
+        </section>
+
+        <!-- 3D model -->
+				<section data-transition="slide none" data-background-video="assets/videos/LasFloresAnimation3.mp4" data-background-video-loop data-background-video-muted>
+					<aside class="notes">
+						3D models are built using computer vision technology to combine hundreds of images from the drone survey into a point cloud.
+					</aside>
+				</section>
+
+        <!-- orthophotos -->
+				<section data-transition="slide none" data-background-image="assets/images/1200.jpg" data-background-size="120%">
+					<aside class="notes">
+						A composite image with perspective removed, called an orthophoto, is created from the model.
+					</aside>
+				</section>
+        <section data-transition="slide none" data-background-image="assets/images/600.jpg" data-background-size="120%"></section>
+        <section data-transition="slide none" data-background-image="assets/images/200.jpg" data-background-size="120%"></section>
+        <section data-transition="slide none" data-background-image="assets/images/100.jpg" data-background-size="120%"></section>
+
+        <!-- 3D model -->
+        <!-- <section data-transition="slide none" data-background-image="assets/images/MLRemote.jpg"></section> -->
+
+        <!-- Survey workshops -->
+        <section data-transition="slide none" data-background-image="assets/images/photo--4.jpg"></section>
+        <section data-background-image="assets/images/P1040218.JPG" data-transition="slide none"></section>
+        <section data-background-image="assets/images/P1040215.JPG" data-transition="slide none"></section>
+        <section data-background-image="assets/images/lasFloresWaypointsLetter.jpg" data-transition="slide none"></section>
+        <section data-background-image="assets/images/20181026_LasFlores_foda.jpg" data-transition="slide none"></section>
+
+        <!-- Survey instrument -->
+        <section data-transition="slide none" data-background-image="assets/images/survey.png">
+          <div class="fragment center" data-fragment-index="0" style="padding: 13px; max-width: 60%; background-color: #000; opacity: 0.8; font-size: 80%; border-radius: 8px;">
+            <table class="table-no-lines">
+              <tr><td colspan=2></td></tr>
+              <tr><td colspan=2>6 Pages</td></tr>
+              <tr><td colspan=2>81 Questions</td></tr>
+              <tr><td colspan=2>18 Observations</td></tr>
+              <tr class="smaller fragment" data-fragment-index="1"><td colspan=2></td></tr>
+              <tr class="smaller fragment" data-fragment-index="1"><td>8</td><td>Information about the interviewee</td></tr>
+              <tr class="smaller fragment" data-fragment-index="1"><td>14</td><td>Building characteristics</td></tr>
+              <tr class="smaller fragment" data-fragment-index="1"><td>13</td><td>Socio-economic</td></tr>
+              <tr class="smaller fragment" data-fragment-index="1"><td>8</td><td>Services</td></tr>
+              <tr class="smaller fragment" data-fragment-index="1"><td>14</td><td>Community and culture</td></tr>
+              <tr class="smaller fragment" data-fragment-index="1"><td>10</td><td>Agricultural activities</td></tr>
+              <tr class="smaller fragment" data-fragment-index="1"><td>11</td><td>Environment</td></tr>
+              <tr class="smaller fragment" data-fragment-index="1"><td>18</td><td>Built environment (observations)</td></tr>
+              <tr><td colspan=2 class="fragment" data-fragment-index="2"></td></tr>
+              <tr><td colspan=2 class="fragment" data-fragment-index="2">Signed Consent Form</td></tr>
+              <tr><td colspan=2 class="fragment" data-fragment-index="2"></td></tr>
+            </table>
+          </div>
+        </section>
+
+        <!-- GIS learning -->
+        <section data-transition="slide none" data-background-image="assets/images/photo--11.jpg"></section>
+        <section data-transition="slide none" data-background-image="assets/images/photo--15.jpg"></section>
+
+        <!-- Social Cartography -->
+        <section data-transition="slide none" data-background-image="assets/images/photo--7.jpg"></section>
+        <section data-transition="slide none" data-background-image="assets/images/photo--32.jpg"></section>
+        <section data-transition="slide none" data-background-image="assets/images/photo--34.jpg"></section>
+        <section data-transition="slide none" data-background-image="assets/images/photo--29.jpg"></section>
+        <section data-transition="slide none" data-background-image="assets/images/photo--22.jpg"></section>
+
+        <!-- Maps from social cartography -->
+        <section data-transition="slide none" data-background-color="#fff">       
+          <div class="map-image" style="background-image: url('assets/images/2018_OctSilueta_light.jpg');"></div>   
+        </section>
+        <section data-transition="slide none" data-background-color="#fff">       
+          <div class="map-image" style="background-image: url('assets/images/2018_OctThemed2_light.jpg');"></div>   
+        </section>
+        <section data-transition="slide none" data-background-color="#fff">       
+          <div class="map-image" style="background-image: url('assets/images/2018_OctColors_light.jpg');"></div>   
+        </section>
+
+        <!-- fishing map interviews -->
+        <!-- <section data-transition="slide none" data-background-image="assets/images/_MG_1782.JPG"></section>
+        <section data-transition="slide none" data-background-image="assets/images/2019_FebFishingLight.jpg"></section>
+        <section data-transition="slide none" data-background-color="#fff">       
+          <div class="map-image" style="background-image: url('assets/images/Pescadores_Final.jpg');"></div>   
+        </section> -->
+
+        <!-- interviews -->
+        <section data-transition="slide none" data-background-image="assets/images/IMG_1317.JPG"></section>
+        <section data-transition="slide none" data-background-image="assets/images/IMG_1385.JPG"></section>
+
+        <!-- desalojo -->
+        <section data-transition="slide none" data-background-image="assets/images/whatsapp_image_2019-02-06_at_7.23.02_am.jpg">
+          <p class="reference highlight-text" data-fragment-index="0" style="color: #bbb !important; position: relative; top: 500px;">
+            Dimar en coordinación con la  Policía, Ejército Nacional, Armada, Esmad, Secretaría de Gobierno, y Secretaría de Control Urbano y Espacio Público adelantan proceso de desalojo en la Ciénaga de Mallorquín, en el sector de Las Flores con el fin de restituir bienes de servicio público. Rodriguez, Luis (2019-02-06). "Desalojo en la Ciénaga de Mallorquín, en el sector de Las Flores". <i>El Heraldo</i>. Photo: Luis Rodriguez.
+          </p>
+        </section>
+        <section data-transition="slide none" data-background-image="assets/images/b552da77-8257-4882-9d6d-5975ef0bdacb.jpg">
+          <p class="reference highlight-text" data-fragment-index="0" style="color: #bbb !important; position: relative; top: 550px;">
+            La Secretaría de Control Urbano y Espacio Público en la demolición de las viviendas. Jimenez, Laura (2019-02-06). "Ocho días tienen las familias para salir de Mallorquín". <i>El Heraldo</i>. Photo: Luis Rodriguez.
+          </p>
+        </section>
+        <section data-transition="slide none" data-background-image="assets/images/b737f6b5-e55b-4d5d-b75e-6da2c3ba8952.jpg">
+          <p class="fragment reference highlight-text" data-fragment-index="0" style="color: #bbb !important; font-size: 0.8em !important">
+            "De acuerdo con el último reporte de la Dimar, de los 78.845 kilómetros cuadrados de terrenos con características técnicas de playa marítima y terrenos de bajamar que tiene el departamento del Atlántico; aproximadamente 56.061 kilómetros cuadrados están invadidos por particulares, que no presentan ningún tipo de permiso." - El Tiempo (2019-02-06). "Avanza el desalojo de 300 familias en el Ciénaga de Mallorquín". <i>El Tiempo</i>.
+          </p>
+          <p class="reference highlight-text" data-fragment-index="0" style="color: #bbb !important; position: relative; top: 350px;">
+            Uno de los palafitos es desalojado por funcionarios en la Ciénaga Mallorquín. Jimenez, Laura (2019-02-06). "Ocho días tienen las familias para salir de Mallorquín". <i>El Heraldo</i>. Photo: Luis Rodriguez.
+          </p>
+        </section>
+
+        <!-- census results -->
+        <section data-transition="slide none" data-background-image="assets/images/IMG_1338.JPG">
+          <p class="shadow-title highlight-text center fragment" style="width: 85%; margin-bottom: 350px">Summary of the Door to Door Survey</p>
+          <p class="highlight-text center fragment" style="width: 65%; margin-top: 0 !important; margin-bottom: 0 !important; font-size: 70%;">2578 buildings edited in the database (100%)</p>
+          <p class="highlight-text center fragment" style="width: 65%; font-size: 70%; margin-top: 0 !important; margin-bottom: 0 !important;">2414 buildings observed from the street (94%)</p>
+          <p class="highlight-text center fragment" style="width: 65%; font-size: 70%; margin-top: 0 !important; margin-bottom: 0 !important;">2338 buildings with complete survey instrument (91%)</p>
+          <p class="highlight-text center fragment" style="width: 65%; font-size: 70%; margin-top: 0 !important; margin-bottom: 0 !important;">2125 buildings with complete survey and signed consent form (82%)</p>
+        </section>
+
+        <!-- So many maps -->
+        <section data-transition="slide none" data-background-color="#fff">
+          <div class="map-image" style="background-image: url('assets/images/Multiples_Servicios.jpg');"></div>   
+        </section>
+
+        <section data-transition="slide none" data-background-color="#fff">       
+          <div class="map-image" style="background-image: url('assets/images/Multiples_Vivienda_Publica.jpg');"></div>   
+        </section>
+
+        <section data-transition="slide none" data-background-color="#fff">       
+          <div class="map-image" style="background-image: url('assets/images/Multiples_Materiales.jpg');"></div>   
+        </section>
+
+        <section data-transition="slide none" data-background-color="#fff">       
+          <div class="map-image" style="background-image: url('assets/images/historia-02.jpg');"></div>   
+        </section>
+
+        <section data-transition="slide none" data-background-color="#fff">       
+          <div class="map-image" style="background-image: url('assets/images/carta_turismo_map.jpg');"></div>   
+        </section>
+
+        <section data-transition="slide none" data-background-color="#fff"> 
+          <div class="map-image" style="background-image: url('assets/images/inundaciones.jpg');"></div>         
+        </section>
+
+        <section data-transition="slide none" data-background-color="#fff">       
+          <div class="map-image" style="background-image: url('assets/images/res_empleo_informal.jpg');"></div>   
+        </section>
+
+        <section data-transition="slide none" data-background-color="#fff">       
+          <div class="map-image" style="background-image: url('assets/images/res_seguro.jpg');"></div>   
+        </section>
+
+        <section data-transition="slide none" data-background-color="#fff">       
+          <div class="map-image" style="background-image: url('assets/images/res_aire.jpg');"></div>   
+        </section>
+
+        <section data-transition="slide none" data-background-color="#fff">       
+          <div class="map-image" style="background-image: url('assets/images/res_agu_sonido.jpg');"></div>   
+        </section>
+
+        <section data-transition="slide none" data-background-color="#fff"> 
+          <div class="map-image" style="background-image: url('assets/images/res_agu_potable.jpg');"></div>         
+        </section>
+
+        <section data-transition="slide none" data-background-color="#fff"> 
+          <div class="map-image" style="background-image: url('assets/images/res_aguas_consumo.jpg');"></div>         
+        </section>
+
+        <section data-transition="slide none" data-background-color="#fff"> 
+          <div class="map-image" style="background-image: url('assets/images/ComodidadesGrafico.png');"></div>         
+        </section>
+
+        <section data-transition="slide none" data-background-color="#fff"> 
+          <div class="map-image" style="background-image: url('assets/images/CulturalGrafico.png');"></div>         
+        </section>
+
+        <section data-transition="slide none" data-background-color="#fff"> 
+          <div class="map-image" style="background-image: url('assets/images/RecreativosGrafico.png');"></div>         
+        </section>
+
+        <section data-transition="slide none" data-background-color="#fff"> 
+          <div class="map-image" style="background-image: url('assets/images/ComentariosGrafico.png');"></div>         
+        </section>
+
+        <section data-transition="slide none">
+          <div style="font-size: 800%; text-align: center;">!?</div>
+        </section>
+
+        <!-- data governance -->
+
+        <section data-transition="slide none" data-background-color="#fff"> 
+          <img src='assets/images/mesa.png' style="max-width: 500px; margin-left: -600px; border: 1px solid black !important;">
+          <div class="fragment" style="margin-top: -700px; position: relative; top: 100px; left: 700px; font-size: 0.6em; text-align: left; max-width: 600px;">
+            <p>Written charter co-drafted by community members, UM CCS and pro-bono lawyers from Tecnoglass</p>
+            <p>Data <strong>Ownership, Control, Access, Possession</strong></p>
+            <p>All data owned by FUMUJEM, except for orthographic images which are co-owned by FUMUJEM and UM CCS</p>
+            <p>
+              8 members of the board: <br>
+              <span style="margin-left: 23px;">- 4 from community</span><br>
+              <span style="margin-left: 23px;">- 2 from UM CCS  (UM has deciding vote)</span><br>
+              <span style="margin-left: 23px;">- 2 from Fundación Tecnoglass</span>
+            </p>
+            <p>
+              137 variables in census:<br>
+              <span style="margin-left: 23px;">- 63 are public</span><br>
+              <span style="margin-left: 23px;">- 62 restricted, and 12 internal</span></p>
+            <p>
+              All data sharing must be voted on by board (actas firmadas)<br>
+              <span style="margin-left: 23px;">- all data under Open DB licenses</span><br>
+              <span style="margin-left: 23px;">- all assets under CC licenses</span>
+            </p>
+          </div>     
+        </section>
+
+        <section>
+          <div class="map-image" style="background-image: url('assets/images/ppgis.jpg');"></div>   
+        </section>
+
+        
+				<!-- **************************************************************************** 
+				                                    Conclusion                               
+				     ****************************************************************************  -->
+             
+        <section data-transition="slide none" data-background-color="#fff"> 
+          <img src="assets/images/carta_casas_nuevas.jpg" style="max-width: 550px; margin-left: -600px;">
+          <div class="fragment" style="margin-top: -400px; position: relative; top: -150px; left: 750px; font-size: 0.6em; text-align: left; max-width: 500px;">
+            <p>2702 "improved" building footprint geometries</p>
+            <p>304 new buildings since 2019-07-06 (green)</p>
+            <p>Buildings deleted from Catastro +Facil database since 2019-07-06 (red)</p>
+            <p style="margin-top: 23px;">Repeat for terreno layer??</p>
+          </div>
+          <div class="fragment map-image" style="margin-top: -800px; position: relative; top: 150px; left: 735px; max-width: 500px; background-image: url('assets/images/Megapuerto.jpg');">
+          </div>             
+        </section>
+        
+        <section data-transition="slide none">
+          <p class="fragment highlight-text center" style="width: 85%;">Participatory Data Collection?</p>
+          <p class="fragment highlight-text center" style="width: 85%;">Too Much Data?</p>
+          <p class="fragment highlight-text center" style="width: 85%;">Community and Municipal Adoption?</p>
+					<p class="fragment highlight-text center" style="width: 85%;">Property Rights?</p>
+          <p class="fragment highlight-text center" style="width: 85%;">After Rights, Then What?</p>
+          <p class="fragment highlight-text center" style="width: 85%;">The Country and the City ....
+        </section>
+        
+				<section data-background-image="assets/images/blur.jpg" data-transition="slide none">
+          <div class="center" style="font-size: 0.65em; text-shadow: 1px 1px 3px #000; max-width: 90%; border-radius: 8px; background-color: rgba(255,255,255,0.35); padding: 23px">
+            <h4 style="text-shadow: 1px 1px 3px #000;">Acknowledgements:</h4>
+            <p>We are grateful to the people of Las Flores. Three local organizations in Las Flores played particularly important roles in our relationship with the community: La Fundación de Mujeres Emprendadores (FUMUJEM), la Frente Común de Las Flores, la Junta de Acción Comuncal de Las Flores, and la Associación de Pescadores de Las Flores (ASOPESFLORES). Without the generous support from the University of Miami School of Architecture, the University of Miami Center for Computational Science, the University of Miami Libraries, la Fundación Tecnoglass ESWindows, and the National Geographic Society (grant #NGS-190S-18) none of this work would be possible.</p>
+            <h4 style="text-shadow: 1px 1px 3px #000;">Collaborators:</h4>
+            <p>Chris Mader, Timothy Norris, Amin Sarafraz, Helenn Gynell, Carrie Penabad, Adib Cure, Halina Mader, Robert Carroll, Cristina Posada, Monica Castillo, Adriana Marthe, Maria Correa, Angelica Jimenez, Edinson Borja, Nicanor Florez, Dimas Caraballo, Edilsa Ebrat, Andrea Hernandez, Emily Suarez-Avilez, Juan Guareschi, Qiazi Chen, Marissa Gudiel, Bernardo Rieveling.</p>
+            <p style="margin-left: 210px; margin-bottom: -23px !important; text-align: left;">Thanks! Tim Norris - <a href="mailto:tnorris@miami.edu" style="text-decoration: underline; color: white;">tnorris@miami.edu</a> and Chris Mader - <a href="mailto:cmader@med.miami.edu" style="text-decoration: underline; color: white">cmader@med.miami.edu</a></p>
+            <table style="max-width: 100%;" class="center"><tr>
+              <td style="padding-right: 0.2em; padding-left: 0.1em;"><img style="max-width: 190px; background-color: rgba(0,0,0,0);" src="assets/images/UMCCSlogocolor.png"></td>
+              <td style="padding-right: 0.2em; padding-left: 0.1em;"><img style="margin-left: -30px; margin-right: 7px; max-width: 190px; background-color: rgba(0,0,0,0);" src="assets/images/Logo Horizontal.png"></td>
+              <td style="padding-right: 0.2em; padding-left: 0.1em;"><img style="max-width: 160px; background-color: rgba(0,0,0,0);" src="assets/images/natgeo.png"></td>
+              <td style="padding-right: 0.2em; padding-left: 0.1em;"><img style="margin-left: 7px; max-width: 313px; background-color: rgba(0,0,0,0);" src="assets/images/fumujem.png"></td>
+              <td style="padding-right: 0.2em; padding-left: 0.1em;"><img style="margin-left: -23px; max-width: 250px; background-color: rgba(0,0,0,0);" src="assets/images/logofrentecomun.png"></td>
+              <td style="padding-right: 0.2em; padding-left: 0.1em;"><img style="margin-right: 23px; max-width: 120px; background-color: rgba(0,0,0,0);" src="assets/images/IMG-20191031-WA0001.png"></td>
+            </tr></table>
+          </div>
+        </section>        
+        
+        </div>
+        </div>
+        <script src="common/java/reveal.js"></script>
+	    <script src="common/java/notes.js"></script>
+	    <script src="common/java/head.min.js"></script>
+        <script>
+            Reveal.initialize({
+                width: 1366, height: 768, margin: 0.0,
+                controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				mouseWheel: true,
+				chart: {
+					defaults: { 
+						global: { 
+							defaultFontSize: 20,
+							title: { fontColor: "#333" }, 
+							legend: {
+								position: "top",
+								labels: { fontColor: "#333" },
+							},
+							tooltips: {
+								labels: { fontColor: "#333" },
+							},
+						}, 
+						scale: { 
+							scaleLabel: { fontColor: "#333" }, 
+							gridLines: { color: "#333", zeroLineColor: "#333" }, 
+							ticks: { fontColor: "#333" }, 
+						} 
+					},
+				},
+                dependencies: [
+                    { src: 'common/java/Chart.min.js' },
+                    { src: 'common/java/csv2chart.js' }
+                ] 
+            });
+            /* moveToElements() 
+			/* calculates a center of an SVG group and then moves the positon of the
+			/* SVG to center on that point (specific to the timeline SVG)     */
+			function moveToElements(groupElements) {
+				var bounds=new Array(1300, 0, 768, 0); // (minx, maxx, miny, maxy)
+				bounds = extractBounds(groupElements, bounds);
+				var theSVG = document.getElementById('timelineSVG');
+				theSVG.style.width = '3600px'; 
+				theSVG.style.height = '1508px';
+				var startLeft = parseFloat(theSVG.style.left,10),
+					  startTop = parseFloat(theSVG.style.top,10),
+					  endLeft =  -2.25*((bounds[0]+bounds[1])/2)+800,
+					  endTop = -2.25*((bounds[2]+bounds[3])/2)+335;
+				if (endTop > 15 ) { endTop = 15; }
+				if (endTop < -600 ) { endTop = -600; }
+				var dx = endLeft-startLeft,
+					dy = endTop-startTop;
+				for (var i = 0; i < 200; i++) {
+					theSVG.style.left = (startLeft+i*dx/200)+'px';
+					theSVG.style.top = (startTop+i*dy/200)+'px';	
+				}
+			}
+            /* extractBounds() 
+			/* retrieved the bounds of the text and line elements in a SVG group     */
+			function extractBounds(elements, bounds) {
+				for (var i = 0; i < elements.length; i++ ) {
+					if (elements[i].id != 'ignore') {
+						switch (elements[i].tagName) {
+							case 'line': 
+								if (elements[i].x1.baseVal.value < bounds[0] ) { bounds[0] = elements[i].x1.baseVal.value; } 
+								if (elements[i].x2.baseVal.value > bounds[1] ) { bounds[1] = elements[i].x2.baseVal.value; } 
+								if (elements[i].y1.baseVal.value < bounds[2] ) { bounds[2] = elements[i].y1.baseVal.value; } 
+								if (elements[i].y2.baseVal.value > bounds[3] ) { bounds[3] = elements[i].y2.baseVal.value; } 
+								break;
+							case 'text': 
+								if (elements[i].transform.baseVal.getItem(0).matrix.f < bounds[2]){ bounds[2] = elements[i].transform.baseVal.getItem(0).matrix.f; }
+								if (elements[i].transform.baseVal.getItem(0).matrix.f > bounds[3]){ bounds[3] = elements[i].transform.baseVal.getItem(0).matrix.f; }
+								break;
+							case 'g':
+								bounds = extractBounds(elements[i].children, bounds);
+						}
+						if (bounds[3]-bounds[2] > 200 && bounds[2] < 100) { bounds[3] = 250; }
+					}
+				}
+				return bounds;
+			}
+            /* add event listeners to animate the SVG     */
+			Reveal.addEventListener( 'fragmentshown', function( event ) {
+				groupElements = ( event.fragment.children ? event.fragment.children : event.fragment.childNodes );
+				if (event.fragment.tagName == 'g') {
+					moveToElements(groupElements);
+				}
+			});
+			Reveal.addEventListener( 'fragmenthidden', function( event ) {
+				groupElements = ( event.fragment.children ? event.fragment.children : event.fragment.childNodes );
+				if (event.fragment.tagName == 'g') {
+					moveToElements(groupElements);
+				}
+			});
+        </script>
+    </body>
+</html>
